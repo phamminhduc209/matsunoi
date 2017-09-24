@@ -140,6 +140,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .wrapper {
   padding: 40px 0;
+  position: relative;
 }
 
 /* Header
@@ -551,6 +552,23 @@ footer {
 }
 .widget-address ul li i {
   margin-right: 12px;
+}
+
+.btn-reservation {
+  width: 150px;
+  height: 36px;
+  padding: 0;
+  display: block;
+  text-align: center;
+  line-height: 36px;
+  background: #66a718;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 0;
+  position: absolute;
+  top: 12%;
+  right: 0;
 }
 
 /* Back To Top

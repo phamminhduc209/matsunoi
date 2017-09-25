@@ -20,7 +20,7 @@
 /*  Css */
 @import url(../lib/bootstrap/bootstrap.min.css);
 @import url(../lib/font-awesome/font-awesome.min.css);
-@import url(../lib/carousel/owl.carousel.min.css);
+@import url(../lib/lightbox/js/lightbox.min.css);
 
 /* Layout Style
   ========================================================================== */
@@ -124,16 +124,17 @@ h1, h2, h3, h4, h5, h6 {
   background: transparent;
   margin-bottom: 0;
   padding: 0;
-  margin-top: 20px;
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 .block-breadcrumb .breadcrumb li a {
   color: #333333;
 }
 .block-breadcrumb .breadcrumb li.active {
-  color: #ff6600;
+  color: #9d4a24;
 }
 .block-breadcrumb .breadcrumb>li+li:before {
-  padding: 0 5px;
+  padding: 0 10px;
   color: #333333;
   font-family: "FontAwesome";
   content: "\f178";
@@ -189,11 +190,11 @@ header .header-top {
   width: calc(100% / 4);
 }
 .nav-menu>li>a {
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
   display: block;
   padding: 0;
-  line-height: 60px;
+  line-height: 50px;
   text-align: center;
   color: #fff;
   z-index: 1;
@@ -212,10 +213,16 @@ header .header-top {
   color: #fff;
 }
 
-.box-link .box-title {
+.box-module {
+  margin-bottom: 30px;
+}
+.box-module:last-child {
+  margin-bottom: 0;
+}
+.box-module .box-title {
   background: #9d4a24;
 }
-.box-link .box-title .title {
+.box-module .box-title .title {
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
@@ -240,7 +247,6 @@ header .header-top {
 .box-link .box-content ul li a span.image {
   margin-right: 15px;
 }
-
 .box-link .box-content ul li {
   position: relative;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -281,6 +287,49 @@ header .header-top {
 }
 .box-link .box-content ul li:before {
   background: #66a718;
+}
+
+.box-album-list .box-title .title {
+  text-align: left;
+  padding: 0 25px;
+}
+.box-album-list .box-title .title i {
+  margin-right: 10px;
+}
+
+.box-album-list .box-content {
+  max-height: 200px;
+  overflow-y: scroll;
+  border: 1px solid #9d4a24;
+}
+.box-album-list .box-content ul li {
+  list-style-type: none;
+  padding: 15px 20px;
+}
+.box-album-list .box-content ul li:nth-child(even) {
+  background: #fff6f2;
+}
+.box-album-list .box-content ul li a {
+  position: relative;
+  display: block;
+  font-size: 13px;
+  color: #333333;
+  padding-left: 10px;
+}
+.box-album-list .box-content ul li a:hover,
+.box-album-list .box-content ul li a.active {
+  color: #9d4a24;
+}
+.box-album-list .box-content ul li a:before {
+  content: "\f18e";
+  font-family: "FontAwesome";
+  color: #333333;
+  position: absolute;
+  left: -10px;
+}
+.box-album-list .box-content ul li a:hover:before,
+.box-album-list .box-content ul li a.active:before {
+  color: #9d4a24;
 }
 
 .block-map .map {
@@ -566,10 +615,63 @@ footer {
   font-weight: bold;
   border: none;
   border-radius: 0;
-  position: absolute;
+  position: fixed;
   top: 12%;
   right: 0;
 }
+
+/* Gallary
+  ========================================================================== */
+/*.block-slide-detail #slider {
+  margin-bottom: 20px;
+}
+.block-slide-detail #carousel {
+  margin-bottom: 0;
+}
+.block-slide-detail #carousel li {
+  position: relative;
+  cursor: pointer;
+}
+.block-slide-detail #carousel li.flex-active-slide:before,
+.block-slide-detail #carousel li:hover:before {
+  content: "";
+  background: rgba(157, 74, 36, 0.5);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.block-slide-detail #carousel.flexslider .flex-direction-nav a {
+  overflow: visible;
+  opacity: 1;
+  width: 20px;
+  height: 30px;
+  display: block;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center !important;
+  line-height: 30px;
+  margin: -30px 0 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+.block-slide-detail #carousel.flexslider .flex-direction-nav a:before {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.block-slide-detail #carousel.flexslider .flex-direction-nav .flex-prev {
+  left: 0;
+}
+.block-slide-detail #carousel.flexslider .flex-direction-nav .flex-next {
+  right: 0;
+}
+.block-slide-detail #carousel.flexslider .flex-direction-nav a:before {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.8);
+}*/
+
+
 
 /* Back To Top
   ========================================================================== */

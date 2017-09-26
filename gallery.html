@@ -146,8 +146,8 @@
 				</div><!-- col-sm-3 -->
 				<div class="col-sm-9">
 					<div class="content">
-						<div class="product-image">
-                            <div class="bxslider product-img-gallery">
+						<div class="block-gallary">
+                            <div class="bxslider">
                                 <div class="item">
                                 	<a href="images/gallary/large.jpg" data-lightbox="roadtrip">
                                     	<img src="images/gallary/large.jpg" alt="#" />
@@ -198,9 +198,9 @@
                                     	<img src="images/gallary/large.jpg" alt="#" />
                                     </a>
                                 </div>
-                            </div><!-- /product-img-gallery -->
-                            <div class="product-img-thumb">
-                                <div id="gallery_01" class="pro-thumb-img">
+                            </div><!-- /bxslider -->
+                            <div class="gallary-thumb">
+                                <div id="gallery_01" class="thumb-img">
                                     <div class="item">
                                         <a href="#" data-slide-index="0">
                                             <img src="images/gallary/thumb1.jpg" alt="#" />
@@ -252,8 +252,8 @@
                                         </a>
                                     </div>
                                 </div>
-                            </div><!-- /product-img-thumb -->
-						</div>
+                            </div><!-- /gallary-thumb -->
+						</div><!-- /block-gallary" -->
 					</div>
 				</div><!-- col-sm-9 -->
 			</div>
@@ -318,8 +318,10 @@
 	<script src="lib/bootstrap/bootstrap.min.js"></script>
 	<!-- Js bxslider -->
 	<script src="lib/bxslider/bxslider.min.js"></script>
+	<!-- Js lightbox -->
+	<script src="lib/lightbox/js/lightbox.js"></script>
     <!-- sticky -->
-    <script src="lib/lightbox/js/lightbox-plus-jquery.min.js"></script>
+    <script src="lib/sticky/jquery.sticky.js"></script>
     <!-- Js Common -->
 	<script src="js/common.js"></script>
 
@@ -335,18 +337,18 @@
 
             $(".bxslider").bxSlider({
             	controls: false,
-                pagerCustom: '.pro-thumb-img',
+                pagerCustom: '.thumb-img',
                 infiniteLoop: false,
                 hideControlOnEnd: true,
                 mode: 'fade',
             });
 
-            $(".pro-thumb-img").bxSlider({
-                slideMargin: 10,
-                maxSlides: 5,
+            $(".thumb-img").bxSlider({
+                slideMargin: 20,
+                maxSlides: 6,
                 pager: false,
                 controls: true,
-                slideWidth: 70,
+                slideWidth: 122,
                 infiniteLoop: false,
                 nextText: '<i class="fa fa-angle-right"></i>',
                 prevText: '<i class="fa fa-angle-left"></i>'

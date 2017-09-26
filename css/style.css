@@ -20,7 +20,7 @@
 /*  Css */
 @import url(../lib/bootstrap/bootstrap.min.css);
 @import url(../lib/font-awesome/font-awesome.min.css);
-@import url(../lib/lightbox/js/lightbox.min.css);
+@import url(../lib/lightbox/css/lightbox.css);
 
 /* Layout Style
   ========================================================================== */
@@ -301,6 +301,14 @@ header .header-top {
   max-height: 200px;
   overflow-y: scroll;
   border: 1px solid #9d4a24;
+}
+.box-album-list .box-content::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+}
+.box-album-list .box-content::-webkit-scrollbar-thumb {
+  background-color: #9d4b24;
+  border: none;
 }
 .box-album-list .box-content ul li {
   list-style-type: none;
@@ -622,55 +630,49 @@ footer {
 
 /* Gallary
   ========================================================================== */
-/*.block-slide-detail #slider {
+.block-gallary .bx-wrapper {
   margin-bottom: 20px;
 }
-.block-slide-detail #carousel {
-  margin-bottom: 0;
-}
-.block-slide-detail #carousel li {
+.gallary-thumb {
   position: relative;
-  cursor: pointer;
 }
-.block-slide-detail #carousel li.flex-active-slide:before,
-.block-slide-detail #carousel li:hover:before {
+.gallary-thumb .item a.active:before,
+.gallary-thumb .item a:hover:before {
   content: "";
-  background: rgba(157, 74, 36, 0.5);
+  background: rgba(157, 75, 36, 0.5);
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
 }
-.block-slide-detail #carousel.flexslider .flex-direction-nav a {
-  overflow: visible;
-  opacity: 1;
+.gallary-thumb .bx-controls-direction .bx-prev,
+.gallary-thumb .bx-controls-direction .bx-next {
   width: 20px;
   height: 30px;
   display: block;
   background: rgba(0, 0, 0, 0.5);
   text-align: center !important;
-  line-height: 30px;
-  margin: -30px 0 0;
+  position: absolute;
+  top: 50%;
   -webkit-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
 }
-.block-slide-detail #carousel.flexslider .flex-direction-nav a:before {
-  font-size: 15px;
-  color: rgba(255, 255, 255, 0.8);
-}
-.block-slide-detail #carousel.flexslider .flex-direction-nav .flex-prev {
+.gallary-thumb .bx-controls-direction .bx-prev {
   left: 0;
 }
-.block-slide-detail #carousel.flexslider .flex-direction-nav .flex-next {
+.gallary-thumb .bx-controls-direction .bx-next {
   right: 0;
 }
-.block-slide-detail #carousel.flexslider .flex-direction-nav a:before {
-  font-size: 15px;
-  color: rgba(255, 255, 255, 0.8);
-}*/
-
+.gallary-thumb .bx-controls-direction a i {
+  font-size: 25px;
+  color: #fff;
+  line-height: 30px;
+}
 
 
 /* Back To Top

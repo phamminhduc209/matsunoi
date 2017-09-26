@@ -130,6 +130,9 @@ h1, h2, h3, h4, h5, h6 {
 .block-breadcrumb .breadcrumb li a {
   color: #333333;
 }
+.block-breadcrumb .breadcrumb li a:hover {
+  color: #9d4a24;
+}
 .block-breadcrumb .breadcrumb li.active {
   color: #9d4a24;
 }
@@ -307,7 +310,7 @@ header .header-top {
   background-color: transparent;
 }
 .box-album-list .box-content::-webkit-scrollbar-thumb {
-  background-color: #9d4b24;
+  background-color: #c3c3c3;
   border: none;
 }
 .box-album-list .box-content ul li {
@@ -499,7 +502,7 @@ header .header-top {
   z-index: 2;
 }
 .btn-1e:after {
-  background: #9d4a24;
+  background: #8ac840;
 }
 .btn-1e:hover, .btn-1e:active {
   color: #fff;
@@ -714,7 +717,7 @@ footer {
 }
 .td-scroll-up:hover {
   color: #fff;
-  background: #853009;
+  background: #8ac840;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;

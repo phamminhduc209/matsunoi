@@ -515,6 +515,13 @@ header .header-top {
   background: rgba(157, 74, 36, 0.30);
   color: #fff;
 }
+
+.block-noted {
+  border: 1px dotted #333;
+  border-radius: 4px;
+}
+
+
 /* Button
   ========================================================================== */
 .btn {

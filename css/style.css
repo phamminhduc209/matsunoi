@@ -22,6 +22,7 @@
 @import url(../lib/font-awesome/font-awesome.min.css);
 @import url(../lib/lightbox/css/lightbox.css);
 @import url(../lib/select2/css/select2.min.css);
+@import url(../lib/datetimepicker/build/css/bootstrap-datetimepicker.min.css);
 
 /* Layout Style
   ========================================================================== */
@@ -205,7 +206,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-book,
-.btn-cancel {
+.btn-cancel,
+.btn-check,
+.btn-checkagain {
   width: 160px;
   border: none;
   padding: 10px 12px;
@@ -221,6 +224,12 @@ h1, h2, h3, h4, h5, h6 {
 .btn-cancel {
   background: #666666;
 }
+.btn-check {
+  background: #66a718;
+}
+.btn-checkagain {
+  background: #9d4a24;
+}
 
 /* Button
   ========================================================================== */
@@ -234,7 +243,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-.btn-1e:after, .btn-2e:after, .btn-3e:after, .btn-4e:after, .btn-5e:after, .btn-6e:after, .btn-7e:after, .btn-8e:after, .btn-9e:after {
+.btn-1e:after, .btn-2e:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -253,21 +262,28 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.btn-1e:hover:after, .btn-2e:hover:after, .btn-3e:hover:after, .btn-4e:hover:after, .btn-5e:hover:after, .btn-6e:hover:after, .btn-7e:hover:after, .btn-8e:hover:after, .btn-9e:hover:after {
+.btn-1e:hover:after, .btn-2e:hover:after {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
   -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
   transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
 
-.btn-1e {
-  color: #333;
+.btn-1e,
+.btn-2e {
+  color: #fff;
   z-index: 2;
 }
 .btn-1e:after {
   background: #8ac840;
+  border-radius: 4px;
 }
-.btn-1e:hover, .btn-1e:active {
+.btn-2e:after {
+  background: #c5663a;
+  border-radius: 4px;
+}
+.btn-1e:hover, .btn-1e:active,
+.btn-2e:hover, .btn-2e:active {
   color: #fff;
 }
 
@@ -773,6 +789,15 @@ header .header-top {
   height: 34px;
   top: 0;
 }
+.block-cus-info .input-group-addon {
+  font-size: 17px;
+  color: #8ac840;
+  background: transparent;
+  border-left: none;
+}
+.block-cus-info .input-group .form-control {
+  border-right: none;
+}
 
 /* Footer
   ========================================================================== */
@@ -991,8 +1016,25 @@ footer {
 
 /* Modal Susscess
   ========================================================================== */
-.modal-content {
-
+.modal-body {
+  position: relative;
+  padding: 30px 15px;
+}
+.modal-header .close {
+  margin-top: 0;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  opacity: 1;
+  border-radius: 50%;
+  float: none;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  font-size: 27px;
+}
+.ModalSusscess .close .fa-times-circle {
+  color: #8ac840;
 }
 .modal-header {
   text-align: center;
@@ -1007,9 +1049,15 @@ footer {
   font-size: 15px;
   text-transform: uppercase;
 }
-#ModalSusscess .modal-header {
+.ModalSusscess .modal-header {
   background: #8ac840;
 }
 
 /* Modal Failed
   ========================================================================== */
+.ModalreCheck .modal-header {
+  background: #9d4a24;
+}
+.ModalreCheck .close .fa-times-circle {
+  color: #9d4a24;
+}

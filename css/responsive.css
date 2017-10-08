@@ -52,14 +52,10 @@
 */
 @media (max-width: 767px) {
   .block-logo {
-  	width: 100%;
+  	width: 20%;
   }
   .block-logo2 {
-  	width: 100%;
-  }
-   .block-logo img,
-  .block-logo2 img {
-  	margin: 0 auto;
+  	width: 80%;
   }
   .header-top .block-lang-phone {
   	width: 100%;
@@ -84,13 +80,6 @@
 [Styles for devices max 667px
 */
 @media (max-width: 667px) {
-	.header-top .block-logo img {
-		width: 70px;
-	}
-	.header-top .block-logo2 img {
-		width: 200px;
-		margin-top: 10px;
-	}
 	.block-lang-phone .language ul {
 		margin-top: 10px;
 	}
@@ -103,6 +92,23 @@
 [Styles for devices max 568px
 */
 @media (max-width: 568px) {
+	.header-top .block-logo img {
+		width: 70px;
+	}
+	.header-top .block-logo2 img {
+		width: 200px;
+		margin-top: 10px;
+	}
+	.block-logo {
+  	width: 100%;
+  }
+  .block-logo2 {
+  	width: 100%;
+  }
+ 	.block-logo img,
+  .block-logo2 img {
+  	margin: 0 auto;
+  }
 	.block-product .block-content {
 		margin-left: -15px;
 		margin-right: -15px;

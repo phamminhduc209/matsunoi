@@ -168,7 +168,7 @@
 															<i class="fa fa-angle-double-right"></i>
 															<i class="fa fa-angle-double-right"></i>
 														</span>
-													<a href="#" title="" class="view-detal">
+													<a href="#" title="" class="view-detal" data-toggle="modal" data-target="#arrival-airport">
 														&nbsp;&nbsp;
 														<span class="text">View Detail</span>
 													</a>
@@ -177,14 +177,14 @@
 											<li>
 												<p>
 													<span class="image"><img src="images/icon/taxi.png" alt=""></span>
-													<strong>At arrival gate of airport</strong>
+													<strong>At taxi gate</strong>
 													&nbsp;&nbsp;&nbsp;
 													<span class="icon">
 														<i class="fa fa-angle-double-right"></i>
 														<i class="fa fa-angle-double-right"></i>
 														<i class="fa fa-angle-double-right"></i>
 													</span>
-													<a href="#" title="" class="view-detal">
+													<a href="#" title="" class="view-detal" data-toggle="modal" data-target="#at-taxi-stand">
 														&nbsp;&nbsp;
 														<span class="text">View Detail</span>
 													</a>
@@ -345,7 +345,9 @@
 		</div>	
 	</footer><!-- footer -->
 
-	<a class="btn btn-reservation btn-1e" href="#" data-toggle="modal" data-target="#ModalSusscess2">RESERVATION</a><!-- Btn Reservation -->
+	<a class="btn btn-reservation btn-1e" href="#" data-toggle="modal" data-target="#ModalSusscess">RESERVATION</a><!-- Btn Reservation -->
+
+	<a class="btn btn-reservation btn-1e" href="#" data-toggle="modal" data-target="#ModalreCheck" style="margin-top: 50px;">Demo Recheck</a><!-- Btn Reservation -->
 
 	<a id="return-to-top" class="td-scroll-up" href="javascript:void(0)">
   		<i class="fa fa-angle-up" aria-hidden="true"></i>
@@ -440,7 +442,7 @@
 		</div>
 	</div><!-- /#ModalreCheck -->
 
-	<div class="modal fade ModalSusscess" id="ModalSusscess1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal fade ModalSusscess" id="arrival-airport" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		<div class="modal-dialog modal-md" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -462,7 +464,7 @@
 		</div>
 	</div><!-- /#ModalreCheck -->
 
-	<div class="modal fade ModalSusscess" id="ModalSusscess2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal fade ModalSusscess" id="at-taxi-stand" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		<div class="modal-dialog modal-md" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -477,7 +479,8 @@
 						<br>
 						<p style="color: #ea0000;">Note: please remember taxi driver number in case of recontacting for lost and found.</p>
 						<br>
-						<p>Because we located in a small alley from the street, in case you are lost please contact us via <span style="color: #ea0000;">Tel No 028 38246068.</span></p>
+						<p>Because we located in a small alley from the street, in case you are lost please contact us via</p>
+						<p style="color: #ea0000;">Tel No 028 38246068.</p>
 					</div>
 				</div>
 			</div>

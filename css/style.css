@@ -1112,6 +1112,11 @@ footer {
 .ModalSusscess .modal-header {
   background: #8ac840;
 }
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 20px;
+}
 
 /* Modal Failed
   ========================================================================== */
@@ -1126,6 +1131,14 @@ footer {
   border: none;
 }
 .table { margin-bottom: 15px; }
+.table.table-des>tbody>tr>td,
+.table.table-des>tbody>tr>th,
+.table.table-des>tfoot>tr>td,
+.table.table-des>tfoot>tr>th,
+.table.table-des>thead>tr>td,
+.table.table-des>thead>tr>th {
+  padding: 5px;
+}
 
 .sticky-wrapper.is-sticky .fixed {
   z-index: 99;
@@ -1133,4 +1146,20 @@ footer {
   -o-transition: 0.3s;
   transition: 0.3s;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.12);
+}
+
+.block-cus-info .table-des .select2-container .select2-selection--single {
+  width: 60;
+}
+.table-des .full-name {
+  width: 240px;
+}
+.table-des .phone-number {
+  width: 160px;
+}
+.table-des .wi-datetimepicker {
+  width: 160px;
+}
+.table-des .identity-number {
+  width: 160px;
 }

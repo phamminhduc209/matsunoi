@@ -51,7 +51,9 @@
 [Styles for devices max 767px
 */
 @media (max-width: 767px) {
-  .block-logo,
+  .block-logo {
+  	width: 100%;
+  }
   .block-logo2 {
   	width: 100%;
   }
@@ -165,6 +167,10 @@
 [Styles for devices max 414px
 */
 @media (max-width: 414px) {
+	.menu .container {
+		padding-right: 0;
+		padding-left: 0;
+	}
 	.menu .nav-menu>li {
 	  float: left;
 	  position: relative;
@@ -184,9 +190,10 @@
 	.block-cus-info .group-btn {
 		text-align: center; 
 	}
-	.block-cus-info .group-btn .btn-book {
-		margin-right: 0;
-		margin-bottom: 10px;
+	.block-cus-info .group-btn .btn-book,
+	.block-cus-info .group-btn .btn-cancel {
+		width: 110px;
+		padding: 8px 12px;
 	}
 }
 

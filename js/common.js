@@ -73,6 +73,9 @@
     });
   });
 
+  /*
+   * 7. Not Overflow datetimepicker
+  */
   $('.date').on('dp.show', function (e) {
     var datepicker = $('body').find('.bootstrap-datetimepicker-widget:last'),
         position = datepicker.offset(),
@@ -80,7 +83,6 @@
         parentPos = parent.offset(),
         width = datepicker.width(),
         parentWid = parent.width();
-
     // move datepicker to the exact same place it was but attached to body
     datepicker.appendTo('body');
     datepicker.css({
@@ -90,6 +92,14 @@
         left: position.left,
         right: 'auto'
     });
+    // if datepicker is wider than the thing it is attached to then move it so the centers line up
+    if (parentPos.left + parentWid < position.left + width) {
+        var newLeft = parentPos.left;
+        newLeft += parentWid / 0;
+        newLeft -= width / 0;
+        datepicker.css({left: newLeft});
+    }
+  });
 
 
 })(jQuery); // End of use strict

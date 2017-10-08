@@ -58,18 +58,18 @@
 				</div>
 			</div>
 		</div><!-- /header-top -->
-		<div class="menu">
+		<div class="menu fixed">
 			<div class="container">
 				<nav>
 					<ul class="nav-menu">
-						<li><a href="index.html" title="HOME">HOME</a></li>
-						<li class="active"><a href="nearby.html" title="NEARBY">NEARBY</a></li>
+						<li class="active"><a href="index.html" title="HOME">HOME</a></li>
+						<li><a href="nearby.html" title="NEARBY">NEARBY</a></li>
 						<li><a href="gallery.html" title="GALLERY">GALLERY</a></li>
 						<li><a href="services.html" title="SERVICES">SERVICES</a></li>
 					</ul>
 				</nav>
 			</div>
-		</div>
+		</div><!-- /menu -->
 	</header><!-- /header -->
 
 	<section class="wrapper">
@@ -83,7 +83,119 @@
 						</ul>
 					</div>
 				</div><!-- /block-breadcrumb -->
-				<div class="col-sm-3">
+				<div class="col-sm-9 col-sm-push-3 main-content">
+					<div class="block-services">
+						<div class="block-title block-title-cm block-page">
+							<h3 class="title">Check In Your Room</h3>
+						</div><!-- /block-title -->
+						<div class="block-content">
+							<div class="block-check-info">
+								<div class="row">
+									<div class="col-sm-6 col-xs-6">
+										<div class="box-input">
+											<p>Check-in day: <strong>03/10/2017</strong></p>
+										</div>
+									</div>
+									<div class="col-sm-6 col-xs-6">
+										<div class="box-input">
+											<p>Check-out day: <strong>08/10/2017</strong></p>
+										</div>
+									</div>
+								</div><!-- /row -->
+								<div class="row">
+									<div class="col-sm-6 col-xs-6">
+										<div class="box-input">
+											<p>Number of guests: <strong>2</strong></p>
+										</div>
+									</div>
+									<div class="col-sm-6 col-xs-6">
+										<div class="box-input">
+											<p>Room Type: <strong>Standard Room</strong></p>
+										</div>
+									</div>
+								</div><!-- /row -->
+							</div><!-- /block-checkin-info -->
+
+							<div class="block block-cus-info">
+								<h2 class="title">Customer's Infomation</h2>
+								<form action="#" method="get" class="form-cus-info">
+									<div class="table-responsive">
+										<table class="table table-noborder">
+											<tr>
+												<td>
+													<select name="" class="form-control" data-width="100%">
+														<option value="" selected="selected">Mr.</option>
+														<option value="">Ms.</option>
+													</select>
+												</td>
+												<td>
+													<input type="text" name="" value="" placeholder="Full Name" class="form-control">
+												</td>
+												<td>
+													<input type="text" name="" value="" placeholder="Date of birth" class="form-control">
+												</td>
+												<td>
+													<input type="text" name="" value="" placeholder="Indentity number" class="form-control">
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<select name="" class="form-control" data-width="100%">
+														<option value="" selected="selected">Mr.</option>
+														<option value="">Ms.</option>
+													</select>
+												</td>
+												<td>
+													<input type="text" name="" value="" placeholder="Full Name" class="form-control">
+												</td>
+												<td>
+													<input type="text" name="" value="" placeholder="Date of birth" class="form-control">
+												</td>
+												<td>
+													<input type="text" name="" value="" placeholder="Indentity number" class="form-control">
+												</td>
+											</tr>
+										</table>
+									</div><!-- /table-responsive -->
+									<div class="row">
+										<div class="col-sm-12">
+											<div class="form-group">
+												<textarea name="" class="form-control" placeholder="Special request:" style="max-width: "></textarea>
+											</div>
+										</div>
+									</div><!-- /row -->
+									<div class="row">
+										<div class="col-sm-12">
+											<div class="form-group">
+												<p class="sub-title"><strong>Payment method:</strong></p>
+												<ul class="check-list">
+													<li class="item">
+													 	<input type="radio" id="Incash" name="selector">
+													 	<span class="check"></span>
+														<label for="Incash">In cash (VND)</label>
+													</li>
+													<li class="item">
+													 	<input type="radio" id="Bycreditcards" name="selector">
+													 	<span class="check"></span>
+														<label for="Bycreditcards">By credit cards (Master card, Visa)</label>
+													</li>
+													<li class="item">
+														<input type="text" name="" value="" class="form-control" placeholder="Yout credit card’s number goes here">
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div><!-- /row -->
+									<div class="group-btn">
+										<a href="#" class="btn btn-book btn-2e">Book</a>
+										<a href="#" class="btn btn-cancel btn-3e">Cancel</a>
+									</div><!-- /group-btn -->
+								</form>
+							</div><!-- /block-checkin-info -->
+						</div><!-- /block-content -->
+					</div>
+				</div><!-- col-sm-9 -->
+				<div class="col-sm-3 col-sm-pull-9 left-sidebar">
 					<div class="box-sidebar">
 						<div class="box-module box-link">
 							<div class="box-title">
@@ -155,109 +267,6 @@
 						</div><!-- box-link -->
 					</div>
 				</div><!-- col-sm-3 -->
-				<div class="col-sm-9">
-					<div class="block-services">
-						<div class="block-title block-title-cm block-page">
-							<h3 class="title">Check In Your Room</h3>
-						</div><!-- /block-title -->
-						<div class="block-content">
-							<div class="block-check-info">
-								<div class="row">
-									<div class="col-sm-6">
-										<div class="box-input">
-											<p>Check-in day: <strong>03/10/2017</strong></p>
-										</div>
-									</div>
-									<div class="col-sm-6">
-										<div class="box-input">
-											<p>Check-out day: <strong>08/10/2017</strong></p>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-sm-6">
-										<div class="box-input">
-											<p>Number of guests <strong>2</strong></p>
-										</div>
-									</div>
-									<div class="col-sm-6">
-										<div class="box-input">
-											<p>Room Type <strong>Standard Room</strong></p>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-sm-12">
-										<div class="box-input">
-											<p class="box-ip-title">Spacial request</p>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda officia quibusdam deleniti eos cupiditate dolore doloribus! Ad dolore dignissimos asperiores dicta facere optio quod commodi nam tempore recusandae. Rerum sed nulla eum vero expedita ex delectus voluptates rem at neque quos facere sequi unde optio aliquam!</p>
-										</div>
-									</div>
-								</div>
-							</div><!-- /block-checkin-info -->
-
-							<div class="block block-cus-info">
-								<h2 class="title">Customer's Infomation</h2>
-								<form action="#" method="get" class="form-cus-info">
-									<div class="row">
-										<div class="col-sm-3">
-											<div class="form-group">
-												<select name="" class="form-control" data-width="100%">
-													<option value="" selected="selected">Mr.</option>
-													<option value="">Ms.</option>
-												</select>
-											</div>
-										</div>
-										<div class="col-sm-3">
-											<div class="form-group">
-												<input type="text" name="" value="" placeholder="Full Name" class="form-control">
-											</div>
-										</div>
-										<div class="col-sm-3">
-											<div class="form-group">
-												<input type="text" name="" value="" placeholder="Date of birth" class="form-control">
-											</div>
-										</div>
-										<div class="col-sm-3">
-											<div class="form-group">
-												<input type="text" name="" value="" placeholder="Indentity number" class="form-control">
-											</div>
-										</div>
-									</div><!-- /row -->
-									<div class="row">
-										<div class="col-sm-3">
-											<div class="form-group">
-												<select name="" class="form-control" data-width="100%">
-													<option value="">Mr.</option>
-													<option value="" selected="selected">Ms.</option>
-												</select>
-											</div>
-										</div>
-										<div class="col-sm-3">
-											<div class="form-group">
-												<input type="text" name="" value="" placeholder="Full Name" class="form-control">
-											</div>
-										</div>
-										<div class="col-sm-3">
-											<div class="form-group">
-												<input type="text" name="" value="" placeholder="Date of birth" class="form-control">
-											</div>
-										</div>
-										<div class="col-sm-3">
-											<div class="form-group">
-												<input type="text" name="" value="" placeholder="Indentity number" class="form-control">
-											</div>
-										</div>
-									</div><!-- /row -->
-									<div class="group-btn text-left">
-										<a href="#" class="btn btn-book">Book</a>
-										<a href="#" class="btn btn-cancel">Cancel</a>
-									</div>
-								</form>
-							</div><!-- /block-checkin-info -->
-						</div><!-- /block-content -->
-					</div>
-				</div><!-- col-sm-9 -->
 			</div>
 		</div>		
 	</section><!-- /wrapper-->

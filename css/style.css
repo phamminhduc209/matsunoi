@@ -199,10 +199,16 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid #dfdfdf;
 }
 .form-control:focus {
-  border-color: #8ac840;
+  border-color: #9ed260;
   outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px #8ac840;
-  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px #8ac840;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.select2-container:focus {
+  border-color: #9ed260;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none; 
 }
 
 .btn-book,
@@ -216,10 +222,10 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   color: #fff;
   font-weight: bold;
-  margin-right: 15px;
 }
 .btn-book {
   background: #9d4a24;
+  margin-right: 15px;
 }
 .btn-cancel {
   background: #666666;
@@ -243,7 +249,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-.btn-1e:after, .btn-2e:after {
+.btn-1e:after, .btn-2e:after, .btn-3e:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -262,7 +268,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.btn-1e:hover:after, .btn-2e:hover:after {
+.btn-1e:hover:after, .btn-2e:hover:after, .btn-3e:hover:after {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
   -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
@@ -270,7 +276,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-1e,
-.btn-2e {
+.btn-2e,
+.btn-3e {
   color: #fff;
   z-index: 2;
 }
@@ -282,8 +289,13 @@ h1, h2, h3, h4, h5, h6 {
   background: #c5663a;
   border-radius: 4px;
 }
+.btn-3e:after {
+  background: #8f8f8f;
+  border-radius: 4px;
+}
 .btn-1e:hover, .btn-1e:active,
-.btn-2e:hover, .btn-2e:active {
+.btn-2e:hover, .btn-2e:active,
+.btn-3e:hover, .btn-3e:active {
   color: #fff;
 }
 
@@ -371,6 +383,9 @@ header .header-top {
   font-weight: bold;
   line-height: 50px;
   text-align: center;
+}
+.box-link {
+  overflow: hidden;
 }
 .box-link .box-content ul li {
   list-style-type: none;
@@ -529,6 +544,7 @@ header .header-top {
 .block-access .list-inline li {
   padding: 0;
   margin-bottom: 15px;
+  width: 100%;
 }
 .block-access .list-inline li:last-child {
   margin-bottom: 0;
@@ -548,7 +564,13 @@ header .header-top {
   text-decoration: underline;
 }
 
-.block-product .item {
+.block-map {
+  -webkit-box-shadow: 5px 5px 9px -1px rgba(219,219,219,1);
+  -moz-box-shadow: 5px 5px 9px -1px rgba(219,219,219,1);
+  box-shadow: 5px 5px 9px -1px rgba(219,219,219,1);
+}
+
+.block-product .item .item-content {
   background: #fff;
   -webkit-box-shadow: 0px 0px 5px 2px rgba(194,194,194,1);
   -moz-box-shadow: 0px 0px 5px 2px rgba(194,194,194,1);
@@ -559,49 +581,48 @@ header .header-top {
   position: relative;
   overflow: hidden;
 }
-.block-product .item:last-child {
+.block-product .item-content:last-child {
   margin-bottom: 0;
 }
-.block-product .item .image {
+.block-product .item-content .image {
   float: left;
   width: 265px;
   overflow: hidden;
   margin-right: 15px;
 }
-.block-product .item .description {
+.block-product .item-content .description {
   float: left;
   width: calc(100% - 280px);
-  float: left;
   padding: 20px 15px;
 }
-.block-product .item .description .name {
+.block-product .item-content .description .name {
   font-size: 14px;
   color: #9d4a24;
   font-weight: bold;
   margin-bottom: 15px;
 }
-.block-product .item .description .price {
+.block-product .item-content .description .price {
   color: #ea0000;
   font-size: 13px;
   font-weight: bold;
   margin-bottom: 15px;
 }
-.block-product .item .description .price .per {
+.block-product .item-content .description .price .per {
   color: #333333;
 }
-.block-product .item .description .info {
+.block-product .item-content .description .info {
   padding-right: 75px;
 }
-.block-product .item .description .info li {
+.block-product .item-content .description .info li {
   list-style-type: none;
   padding-left: 15px;
   position: relative;
   margin-bottom: 5px;
 }
-.block-product .item .description .info li:last-child {
+.block-product .item-content .description .info li:last-child {
   margin-bottom: 0;
 }
-.block-product .item .description .info li:before {
+.block-product .item-content .description .info li:before {
   content: "\f058";
   font-family: "FontAwesome";
   color: #66a718;
@@ -624,7 +645,7 @@ header .header-top {
   right: 15px;
   border: none;
 }
-.block-product .btn-book {
+.block-product .btn-booknow {
   background: #66a718;
   color: #fff;
 }
@@ -733,9 +754,9 @@ header .header-top {
   overflow: hidden;
   margin-bottom: 20px;
 }
-.block-services .list-services .item:nth-child(3n + 1) {
+/*.block-services .list-services .item:nth-child(3n + 1) {
   clear: both;
-}
+}*/
 .block-services .list-services .item .icon {
   font-weight: bold;
   color: #8ac840;
@@ -797,6 +818,42 @@ header .header-top {
 }
 .block-cus-info .input-group .form-control {
   border-right: none;
+}
+.block-cus-info .sub-title {
+  font-weight: bold;
+  color: #666;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+.block-cus-info input[type='radio'] {
+  opacity: 0;
+  margin-right: 15px;
+}
+.block-cus-info input[type='radio'] + span{
+  background: url(../images/radio.png) no-repeat center left;
+  padding-left: 18px;
+  margin-left: -18px;
+}
+.block-cus-info input[type='radio']:checked + span{
+  background: url(../images/radio-check.png) no-repeat center left;
+}
+.block-cus-info .check-list .item {
+  list-style-type: none;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+.block-cus-info .check-list .item:last-child {
+  margin-bottom: 0;
+}
+.block-cus-info .check-list .item label {
+  cursor: pointer;
+  color: #666666;
+  margin-left: 10px;
+  margin-bottom: 0;
+}
+.block-cus-info .check-list .item input[type='text'] {
+  max-width: 415px;
+  margin-left: 40px;
 }
 
 /* Footer
@@ -920,6 +977,7 @@ footer {
   position: fixed;
   top: 12%;
   right: 0;
+  z-index: 99;
 }
 
 /* Gallary
@@ -1060,4 +1118,25 @@ footer {
 }
 .ModalreCheck .close .fa-times-circle {
   color: #9d4a24;
+}
+
+.table-responsive {
+  border: none;
+}
+.table.table-noborder>tbody>tr>td,
+.table.table-noborder>tbody>tr>th,
+.table.table-noborder>tfoot>tr>td,
+.table.table-noborder>tfoot>tr>th,
+.table.table-noborder>thead>tr>td, 
+.table.table-noborder>thead>tr>th {
+  padding: 5px;
+  border-top: none;
+}
+
+.sticky-wrapper.is-sticky .fixed {
+  z-index: 99;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.12);
 }

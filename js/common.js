@@ -52,7 +52,7 @@
   /*
    * 3. Sticky Menu
   */
-  // $('.fixed').sticky({ topSpacing: 0 });
+  $('.fixed').sticky({ topSpacing: 0 });
 
   /*
    * 7. Main Menu

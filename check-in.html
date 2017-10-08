@@ -39,10 +39,10 @@
 					<div class="block-logo col-sm-3 col-xs-12">
 						<h1 class="hide">Matsunoi Hotel</h1>
 						<a href="index.html" title="Logo Matsunoi"><img src="images/logo.png" alt=""></a>
-					</div>
+					</div><!-- /block-logo -->
 					<div class="block-logo2 col-sm-6 col-xs-12">
 						<a href="index.html" title="Logo Address Matsunoi"><img src="images/logo2.png" alt=""></a>
-					</div>
+					</div><!-- /block-logo2 -->
 					<div class="block-lang-phone col-sm-3 col-xs-12">
 						<div class="language">
 							<ul>
@@ -54,7 +54,7 @@
 						<p class="phone">
 							<i class="fa fa-phone"></i>1800 1800
 						</p>
-					</div>
+					</div><!-- /block-lang-phone -->
 				</div>
 			</div>
 		</div><!-- /header-top -->
@@ -120,7 +120,16 @@
 								<h2 class="title">Customer's Infomation</h2>
 								<form action="#" method="get" class="form-cus-info">
 									<div class="table-responsive">
-										<table class="table table-noborder">
+										<table class="table table-striped">
+											<thead>
+												<tr>
+													<th style="width: 80px;">Mr/Ms</th>
+													<th style="width: 240px;">Full Name</th>
+													<th style="width: 160px;">Phone Number</th>
+													<th style="width: 160px;">Date of Birth</th>
+													<th>Identity Number</th>
+												</tr>
+											</thead>
 											<tr>
 												<td>
 													<select name="" class="form-control" data-width="100%">
@@ -129,13 +138,21 @@
 													</select>
 												</td>
 												<td>
-													<input type="text" name="" value="" placeholder="Full Name" class="form-control">
+													<input type="text" name="" value="" placeholder="" class="form-control">
 												</td>
 												<td>
-													<input type="text" name="" value="" placeholder="Date of birth" class="form-control">
+													<input type="text" name="" value="" placeholder="" class="form-control">
 												</td>
 												<td>
-													<input type="text" name="" value="" placeholder="Indentity number" class="form-control">
+													<div class='input-group date' id='datetimepicker6'>
+										                <input type='text' class="form-control" placeholder="" />
+										                <span class="input-group-addon">
+										                    <span class="glyphicon glyphicon-calendar"></span>
+										                </span>
+										            </div>
+												</td>
+												<td>
+													<input type="text" name="" value="" placeholder="" class="form-control">
 												</td>
 											</tr>
 											<tr>
@@ -146,13 +163,21 @@
 													</select>
 												</td>
 												<td>
-													<input type="text" name="" value="" placeholder="Full Name" class="form-control">
+													<input type="text" name="" value="" placeholder="" class="form-control">
 												</td>
 												<td>
-													<input type="text" name="" value="" placeholder="Date of birth" class="form-control">
+													<input type="text" name="" value="" placeholder="" class="form-control">
 												</td>
 												<td>
-													<input type="text" name="" value="" placeholder="Indentity number" class="form-control">
+													<div class='input-group date' id='datetimepicker7'>
+										                <input type='text' class="form-control" placeholder="" />
+										                <span class="input-group-addon">
+										                    <span class="glyphicon glyphicon-calendar"></span>
+										                </span>
+										            </div>
+												</td>
+												<td>
+													<input type="text" name="" value="" placeholder="" class="form-control">
 												</td>
 											</tr>
 										</table>
@@ -187,8 +212,8 @@
 										</div>
 									</div><!-- /row -->
 									<div class="group-btn">
-										<a href="#" class="btn btn-book btn-2e">Book</a>
-										<a href="#" class="btn btn-cancel btn-3e">Cancel</a>
+										<button type="submit" class="btn btn-book btn-2e">Book</button>
+										<button type="reset" class="btn btn-cancel btn-3e">Cancel</button>
 									</div><!-- /group-btn -->
 								</form>
 							</div><!-- /block-checkin-info -->
@@ -325,17 +350,32 @@
 
 	<!-- ===== JS ===== -->
 	<script src="js/jquery.min.js"></script>
+	<script src="js/moment.js"></script>
 	<!-- ===== JS Bootstrap ===== -->
 	<script src="lib/bootstrap/bootstrap.min.js"></script>
+	<!-- datetimepicker -->
+	<script src="lib/datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+	<!-- carousel -->
+	<script src="lib/carousel/owl.carousel.min.js"></script>
 	<!-- Select -->
     <script src="lib/select2/js/select2.min.js"></script>
-    <!-- sticky -->
+	<!-- sticky -->
     <script src="lib/sticky/jquery.sticky.js"></script>
     <!-- Js Common -->
 	<script src="js/common.js"></script>
 
 	<script type="text/javascript">
-	    $('select').select2();
+		$(function () {
+			$('#datetimepicker6').datetimepicker({
+				format: 'MM/DD/YYYY',
+					useCurrent: false
+			});
+			$('#datetimepicker7').datetimepicker({
+				format: 'MM/DD/YYYY',
+					useCurrent: false
+			});
+			$('select').select2();
+		});
 	</script>
 
 </body>

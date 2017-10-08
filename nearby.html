@@ -39,10 +39,10 @@
 					<div class="block-logo col-sm-3 col-xs-12">
 						<h1 class="hide">Matsunoi Hotel</h1>
 						<a href="index.html" title="Logo Matsunoi"><img src="images/logo.png" alt=""></a>
-					</div>
+					</div><!-- /block-logo -->
 					<div class="block-logo2 col-sm-6 col-xs-12">
 						<a href="index.html" title="Logo Address Matsunoi"><img src="images/logo2.png" alt=""></a>
-					</div>
+					</div><!-- /block-logo2 -->
 					<div class="block-lang-phone col-sm-3 col-xs-12">
 						<div class="language">
 							<ul>
@@ -54,7 +54,7 @@
 						<p class="phone">
 							<i class="fa fa-phone"></i>1800 1800
 						</p>
-					</div>
+					</div><!-- /block-lang-phone -->
 				</div>
 			</div>
 		</div><!-- /header-top -->
@@ -91,54 +91,54 @@
 						<div class="block-content">
 							<ul class="list-inline">
 								<li class="item">
-									<a href="#" title="" class="image">
-										<img src="images/nearby/1.jpg" alt="">
-									</a>
+									<a href="images/nearby/1.jpg" data-lightbox="roadtrip" data-title="My caption" class="image">
+                                    	<img src="images/nearby/1.jpg" alt="#" />
+                                    </a>
 									<div class="description">
 										<h2 class="title"><a href="#" title="">Central Post Office Central Post Office Central Post Office Central Post Office Central Post Office Central Post Office </a></h2>
 										<p class="desc">About 10 minutes on foot to central post office</p>
 									</div>
 								</li><!-- /item -->
 								<li class="item">
-									<a href="#" title="" class="image">
-										<img src="images/nearby/2.jpg" alt="">
-									</a>
+									<a href="images/nearby/2.jpg" data-lightbox="roadtrip" data-title="My caption" class="image">
+                                    	<img src="images/nearby/2.jpg" alt="#" />
+                                    </a>
 									<div class="description">
 										<h2 class="title"><a href="#" title="">Central Post Office</a></h2>
 										<p class="desc">About 5 minutes by car to Ben Thanh market</p>
 									</div>
 								</li><!-- /item -->
 								<li class="item">
-									<a href="#" title="" class="image">
-										<img src="images/nearby/3.jpg" alt="">
-									</a>
+									<a href="images/nearby/3.jpg" data-lightbox="roadtrip" data-title="My caption" class="image">
+                                    	<img src="images/nearby/3.jpg" alt="#" />
+                                    </a>
 									<div class="description">
 										<h2 class="title"><a href="#" title="">Central Post Office</a></h2>
 										<p class="desc">About 5 minutes by car to Water Puppet Theater</p>
 									</div>
 								</li><!-- /item -->
 								<li class="item">
-									<a href="#" title="" class="image">
-										<img src="images/nearby/4.jpg" alt="">
-									</a>
+									<a href="images/nearby/4.jpg" data-lightbox="roadtrip" data-title="My caption" class="image">
+                                    	<img src="images/nearby/4.jpg" alt="#" />
+                                    </a>
 									<div class="description">
 										<h2 class="title"><a href="#" title="">Central Post Office</a></h2>
 										<p class="desc">About 5 minutes by walk from the Japanese Street – Le Thanh Ton</p>
 									</div>
 								</li><!-- /item -->
 								<li class="item">
-									<a href="#" title="" class="image">
-										<img src="images/nearby/5.jpg" alt="">
-									</a>
+									<a href="images/nearby/5.jpg" data-lightbox="roadtrip" data-title="My caption" class="image">
+                                    	<img src="images/nearby/5.jpg" alt="#" />
+                                    </a>
 									<div class="description">
 										<h2 class="title"><a href="#" title="">Central Post Office</a></h2>
 										<p class="desc">About 5 minutes by car to Takashimaya department store</p>
 									</div>
 								</li><!-- /item -->
 								<li class="item">
-									<a href="#" title="" class="image">
-										<img src="images/nearby/6.jpg" alt="">
-									</a>
+									<a href="images/nearby/6.jpg"" data-lightbox="roadtrip" data-title="My caption" class="image">
+                                    	<img src="images/nearby/6.jpg"" alt="#" />
+                                    </a>
 									<div class="description">
 										<h2 class="title"><a href="#" title="">Central Post Office</a></h2>
 										<p class="desc">Pharmacies, convenient stores, eateries are within 2 minutes walk</p>
@@ -288,6 +288,18 @@
     <script src="lib/sticky/jquery.sticky.js"></script>
     <!-- Js Common -->
 	<script src="js/common.js"></script>
+
+	<script>
+	     $(document).ready(function () {
+        	lightbox.option({
+				'resizeDuration': 700,
+				'wrapAround': true,
+				'showImageNumberLabel': false,
+				'fadeDuration': 700,
+				'positionFromTop': 50,
+			});
+        });
+	</script>
 
 </body>
 </html>

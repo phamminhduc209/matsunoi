@@ -73,5 +73,23 @@
     });
   });
 
+  $('.date').on('dp.show', function (e) {
+    var datepicker = $('body').find('.bootstrap-datetimepicker-widget:last'),
+        position = datepicker.offset(),
+        parent = datepicker.parent(),
+        parentPos = parent.offset(),
+        width = datepicker.width(),
+        parentWid = parent.width();
+
+    // move datepicker to the exact same place it was but attached to body
+    datepicker.appendTo('body');
+    datepicker.css({
+        position: 'absolute',
+        top: position.top,
+        bottom: 'auto',
+        left: position.left,
+        right: 'auto'
+    });
+
 
 })(jQuery); // End of use strict

@@ -79,6 +79,25 @@
 }
 
 /*----------------
+[Styles for devices max 667px
+*/
+@media (max-width: 667px) {
+	.header-top .block-logo img {
+		width: 70px;
+	}
+	.header-top .block-logo2 img {
+		width: 200px;
+		margin-top: 10px;
+	}
+	.block-lang-phone .language ul {
+		margin-top: 10px;
+	}
+	.block-lang-phone .phone {
+		margin-bottom: 0;
+	}
+}
+
+/*----------------
 [Styles for devices max 568px
 */
 @media (max-width: 568px) {
@@ -160,6 +179,7 @@
 	}
 	.block-cus-info .check-list .item input[type='text'] {
 	 	max-width: -webkit-fill-available;
+	 	margin-left: 25px;
 	}
 	.block-cus-info .group-btn {
 		text-align: center; 
@@ -186,7 +206,13 @@
 		width: 100%;
 	}
 	.block-nearby .item .description {
-  	float: left;
+  		float: left;
  		width: calc(100% - 0px);
+	}
+	.block-cus-info input[type='radio'] {
+		margin-right: 5px;
+	}
+	.block-cus-info .check-list .item label {
+		margin-left: 5px;
 	}
 }

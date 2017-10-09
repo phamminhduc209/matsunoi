@@ -3,19 +3,56 @@
    * Description: CSS
    * Version: 1.0.0
    * Last update: 2017/08/20
-   * Author: Duc PM <minhducpham.it@gmail.com>
+   * Author: Duc PM <minhducpham.it@gmail.com> - ducpm.com
    *
+    [Let press Ctrl + f and type of paste the key, then press Enter to search the content ] Title
+    Example : You want Import Files => Title is Import Files, or Fonts => Title is Fonts
+
    * Summary:
    *
-   *  0. ELEMENT
-   *    - 0.1. TYPE ELEMENT
-   *    - 0.2. TYPE ELEMENT
-   *  1. ELEMENT
-   *    - 1.1. TYPE ELEMENT
-   *    - 1.2. TYPE ELEMENT
-   */
+   *  Import Files
+   *    - CSS
+   *  Layout Style
+   *  Commom
+   *    - Block   
+   *    - Wrapper
+   *    - Breadcrumb
+   *    - Title Commom
+   *    - List Inline
+   *    - Form Control
+   *    - Select 2
+   *    - Button
+   *    - Table
+   *    - Sticky
+   *    - Button Reservation
+   *    - 
+   *  Header
+   *    - Header Top
+   *  Menu
+   *    - Box Link
+   *    - Box Album
+   *    - Box Info
+   *  Block Map
+   *  Block Access
+   *  Block Product
+   *  Block Noted
+   *  Block Payment
+   *  Block Nearby
+   *  Block Services
+   *  Block Check Info
+   *  Block Customer Info
+   *  Footer
+   *    - Widget Link
+   *    - Widget Social
+   *    - Widget Address
+   *  Gallary
+   *  Back To Top
+   *  Modal
+   *    - Modal Susscess
+   *    - Modal reCheck
+*/
 
-/* Import Files
+/* 0. Import Files
   ========================================================================== */
 /*  Css */
 @import url(../lib/bootstrap/bootstrap.min.css);
@@ -122,6 +159,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   display: block;
 }
+/* Breadcrumb */
 .block-breadcrumb .breadcrumb {
   background: transparent;
   margin-bottom: 0;
@@ -144,11 +182,14 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "FontAwesome";
   content: "\f178";
 }
+
+/* Wrapper */
 .wrapper {
   padding: 40px 0;
   position: relative;
 }
 
+/* Title Commom */
 .block-title-cm .title {
   color: #9d4a24;
   font-size: 15px;
@@ -180,13 +221,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 18px;
 }
 
-.block-product:before,
-.block-product:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
+/* List Inline */
 .list-inline {
   margin-left: 0;
 }
@@ -195,6 +230,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 0;
   padding-left: 0;
 }
+/* Form Control */
 .form-control {
   border: 1px solid #dfdfdf;
 }
@@ -204,6 +240,13 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+.form-control {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: none;
+}
+
+/* Select 2 */
 .select2-container:focus {
   border-color: #9ed260;
   outline: 0;
@@ -211,6 +254,7 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: none; 
 }
 
+/* Button */
 .btn-book,
 .btn-cancel,
 .btn-check,
@@ -236,9 +280,6 @@ h1, h2, h3, h4, h5, h6 {
 .btn-checkagain {
   background: #9d4a24;
 }
-
-/* Button
-  ========================================================================== */
 .btn {
   position: relative;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -274,7 +315,6 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
   transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
-
 .btn-1e,
 .btn-2e,
 .btn-3e {
@@ -299,8 +339,62 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
+/* Table */
+.table-responsive {
+  border: none;
+}
+.table { margin-bottom: 15px; }
+.table.table-des>tbody>tr>td,
+.table.table-des>tbody>tr>th,
+.table.table-des>tfoot>tr>td,
+.table.table-des>tfoot>tr>th,
+.table.table-des>thead>tr>td,
+.table.table-des>thead>tr>th {
+  padding: 5px;
+}
+.table-des .full-name {
+  width: 240px;
+}
+.table-des .phone-number {
+  width: 160px;
+}
+.table-des .wi-datetimepicker {
+  width: 160px;
+}
+.table-des .identity-number {
+  width: 160px;
+}
+
+/* Sticky */
+.sticky-wrapper.is-sticky .fixed {
+  z-index: 99;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.12);
+}
+/* Button Reservation */
+.btn-reservation {
+  width: 150px;
+  height: 36px;
+  padding: 0;
+  display: block;
+  text-align: center;
+  line-height: 36px;
+  background: #66a718;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 0;
+  position: fixed;
+  top: 12%;
+  right: 0;
+  z-index: 99;
+}
+
 /* Header
   ========================================================================== */
+/* Header Top */
 header .header-top {
   padding: 15px 0;
 }
@@ -334,7 +428,8 @@ header .header-top {
   margin-right: 10px;
 }
 
-/* Menu Top */
+/* Menu
+  ========================================================================== */
 .menu {
   background: #9d4a24;
 }
@@ -368,6 +463,8 @@ header .header-top {
   color: #fff;
 }
 
+/* SideBar
+  ========================================================================== */
 .box-module {
   margin-bottom: 30px;
 }
@@ -384,6 +481,7 @@ header .header-top {
   line-height: 50px;
   text-align: center;
 }
+/* Box Link */
 .box-link {
   overflow: hidden;
 }
@@ -447,6 +545,7 @@ header .header-top {
   background: #66a718;
 }
 
+/* Box Album */
 .box-album-list .box-title .title {
   text-align: left;
   padding: 0 25px;
@@ -454,7 +553,6 @@ header .header-top {
 .box-album-list .box-title .title i {
   margin-right: 10px;
 }
-
 .box-album-list .box-content {
   max-height: 200px;
   overflow-y: scroll;
@@ -498,6 +596,7 @@ header .header-top {
   color: #9d4a24;
 }
 
+/* Box Info */
 .box-info-sb .box-content {
   -webkit-box-shadow: 0px 0px 15px 0px rgba(204,204,204,1);
   -moz-box-shadow: 0px 0px 15px 0px rgba(204,204,204,1);
@@ -528,12 +627,21 @@ header .header-top {
   width: calc(100% - 22px);
 }
 
+/* Block Map
+  ========================================================================== */
 .block-map .map {
   width: 100%;
   height: 300px;
   border: 0;
 }
+.block-map {
+  -webkit-box-shadow: 5px 5px 9px -1px rgba(219,219,219,1);
+  -moz-box-shadow: 5px 5px 9px -1px rgba(219,219,219,1);
+  box-shadow: 5px 5px 9px -1px rgba(219,219,219,1);
+}
 
+/* Block Access
+  ========================================================================== */
 .block-access .caption {
   margin-bottom: 15px;
   line-height: 20px;
@@ -564,12 +672,14 @@ header .header-top {
   text-decoration: underline;
 }
 
-.block-map {
-  -webkit-box-shadow: 5px 5px 9px -1px rgba(219,219,219,1);
-  -moz-box-shadow: 5px 5px 9px -1px rgba(219,219,219,1);
-  box-shadow: 5px 5px 9px -1px rgba(219,219,219,1);
+/* Block Product
+  ========================================================================== */
+.block-product:before,
+.block-product:after {
+  content: "";
+  display: table;
+  clear: both;
 }
-
 .block-product .item {
   margin-bottom: 30px;
 }
@@ -632,7 +742,6 @@ header .header-top {
   position: absolute;
   left: 0;
 }
-
 .block-product .btn {
   width: 120px;
   height: 40px;
@@ -656,6 +765,8 @@ header .header-top {
   color: #fff;
 }
 
+/* Block Noted
+  ========================================================================== */
 .block-noted {
   border: 1px dotted #633f2f;
   border-radius: 4px;
@@ -681,6 +792,8 @@ header .header-top {
   width: calc(100% - 22px);
 }
 
+/* Block Payment
+  ========================================================================== */
 .block-payment .caption {
   color: #333;
   font-size: 13px;
@@ -707,6 +820,8 @@ header .header-top {
   width: calc(100% - 22px);
 }
 
+/* Block Nearby
+  ========================================================================== */
 .block-nearby .item {
   width: 100%;
   position: relative;
@@ -741,6 +856,8 @@ header .header-top {
   color: #333;
 }
 
+/* Block Services
+  ========================================================================== */
 .block-services .list-services-group {
   margin-bottom: 10px;
 }
@@ -783,6 +900,8 @@ header .header-top {
   font-weight: normal;
 }
 
+/* Block Check Info
+  ========================================================================== */
 .block-check-info .box-input {
   border: 1px solid #dfdfdf;
   border-radius: 4px;
@@ -794,6 +913,9 @@ header .header-top {
   margin-bottom: 10px;
   display: block;
 }
+
+/* Block Customer Info
+  ========================================================================== */
 .block-cus-info .title {
   font-size: 15px;
   font-weight: bold;
@@ -815,8 +937,15 @@ header .header-top {
 .block-cus-info .input-group-addon {
   font-size: 17px;
   color: #8ac840;
-  background: transparent;
+  background: #fff;
+  border: 1px solid #dfdfdf;
   border-left: none;
+}
+.block-cus-info .input-group-addon:focus {
+  border-color: #9ed260;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 .block-cus-info .input-group .form-control {
   border-right: none;
@@ -857,6 +986,9 @@ header .header-top {
   max-width: 415px;
   margin-left: 40px;
 }
+.block-cus-info .table-des .select2-container .select2-selection--single {
+  width: 60;
+}
 
 /* Footer
   ========================================================================== */
@@ -864,6 +996,7 @@ footer {
   background: #411704;
   padding: 40px 0;
 }
+/* Widget */
 .widget .block-title span {
   color: #ffffff;
   font-size: 14px;
@@ -891,7 +1024,6 @@ footer {
   position: absolute;
   bottom: 0;
 }
-
 .widget ul li {
   list-style-type: none;
   position: relative;
@@ -900,6 +1032,7 @@ footer {
 .widget ul li:last-child {
   margin-bottom: 0;
 }
+/* Widget Link */
 .widget-link ul li {
   padding-left: 20px;
 }
@@ -931,6 +1064,7 @@ footer {
   color: #c5c5c5;
 }
 
+/* Widget Social */
 .widget-social ul li {
   display: inline-block;
   width: 40px;
@@ -957,29 +1091,12 @@ footer {
   color: #fff;
 }
 
+/* Widget Address */
 .widget-address ul li {
   color: #fff;
 }
 .widget-address ul li i {
   margin-right: 12px;
-}
-
-.btn-reservation {
-  width: 150px;
-  height: 36px;
-  padding: 0;
-  display: block;
-  text-align: center;
-  line-height: 36px;
-  background: #66a718;
-  color: #fff;
-  font-weight: bold;
-  border: none;
-  border-radius: 0;
-  position: fixed;
-  top: 12%;
-  right: 0;
-  z-index: 99;
 }
 
 /* Gallary
@@ -1074,8 +1191,9 @@ footer {
   transition: all 0.3s;
 }
 
-/* Modal Susscess
+/* Modal
   ========================================================================== */
+/* Modal Susscess */  
 .modal-body {
   position: relative;
   padding: 30px 15px;
@@ -1112,54 +1230,11 @@ footer {
 .ModalSusscess .modal-header {
   background: #8ac840;
 }
-.modal-dialog {
-  position: relative;
-  width: auto;
-  margin: 20px;
-}
 
-/* Modal Failed
-  ========================================================================== */
+/* Modal reCheck */
 .ModalreCheck .modal-header {
   background: #9d4a24;
 }
 .ModalreCheck .close .fa-times-circle {
   color: #9d4a24;
-}
-
-.table-responsive {
-  border: none;
-}
-.table { margin-bottom: 15px; }
-.table.table-des>tbody>tr>td,
-.table.table-des>tbody>tr>th,
-.table.table-des>tfoot>tr>td,
-.table.table-des>tfoot>tr>th,
-.table.table-des>thead>tr>td,
-.table.table-des>thead>tr>th {
-  padding: 5px;
-}
-
-.sticky-wrapper.is-sticky .fixed {
-  z-index: 99;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.12);
-}
-
-.block-cus-info .table-des .select2-container .select2-selection--single {
-  width: 60;
-}
-.table-des .full-name {
-  width: 240px;
-}
-.table-des .phone-number {
-  width: 160px;
-}
-.table-des .wi-datetimepicker {
-  width: 160px;
-}
-.table-des .identity-number {
-  width: 160px;
 }

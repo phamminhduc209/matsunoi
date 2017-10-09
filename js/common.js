@@ -1,40 +1,17 @@
 /*
  * ---------------------------------------------------
- * 1. Slide Carousel
- * 2. Scroll to Top
- * 3. Sticky Menu
- * 4. Accordion has icon
- * 5. Hover tag a show ul page Product
- * 6. POPUP order a product - check on info Payment
- * 7. Scroll News Item Tablet & Mobile
+ * 1. Scroll to Top
+ * 2. Sticky Menu
+ * 3. select2
+ * 4. datetimepicker
+ * 5. Not Overflow datetimepicker
  */
 
-  (function($){
-    "use strict";
-  /* ==================================================== */
+(function($){
+  "use strict";
 
   /*
-   * 1. Slide Carousel
-  */
-  $(document).ready(function() {
-    $('.owl-carousel').each(function(index, el) {
-      var config = $(this).data();
-      config.navText = ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'];
-      config.smartSpeed="800";
-      
-      if($(this).hasClass('owl-style2')){
-        config.animateOut='fadeOut';
-        config.animateIn='fadeIn';    
-      }
-      if($(this).hasClass('dotsData')){
-        config.dotsData="true";
-      }
-      $(this).owlCarousel(config);
-    });
-  });
-
-  /*
-   * 2. Scroll to Top
+   * 1. Scroll to Top
   */
   $(window).scroll(function() {
     if ($(this).scrollTop() >= 200) {
@@ -50,31 +27,25 @@
   });
 
   /*
-   * 3. Sticky Menu
+   * 2. Sticky Menu
   */
   $('.fixed').sticky({ topSpacing: 0 });
 
   /*
-   * 7. Main Menu
+   * 3. select2
   */
-  $(".nav-toogle").on( 'click', function() {
-    $(this).toggleClass('has-open');
-    $(".menu").toggleClass("has-open");
-    $("body").toggleClass("menu-open");
+  $('select').select2();
+
+  /*
+   * 4. datetimepicker
+  */
+  $(".datetimepicker").datetimepicker({
+    format: 'MM/DD/YYYY',
+    useCurrent: false
   });
 
   /*
-   * 7. Main Menu
-  */
-  $(document).ready(function(){
-    $('.menu ul li.parent').append('<span class="plus"></span>');
-    $('.menu ul li.parent .plus').click(function(){
-      $(this).toggleClass('open').siblings('.submenu').slideToggle();
-    });
-  });
-
-  /*
-   * 7. Not Overflow datetimepicker
+   * 5. Not Overflow datetimepicker
   */
   $('.date').on('dp.show', function (e) {
     var datepicker = $('body').find('.bootstrap-datetimepicker-widget:last'),
@@ -90,7 +61,8 @@
         top: position.top,
         bottom: 'auto',
         left: position.left,
-        right: 'auto'
+        right: 'auto',
+        'z-index': '9999'
     });
     // if datepicker is wider than the thing it is attached to then move it so the centers line up
     if (parentPos.left + parentWid < position.left + width) {
@@ -100,6 +72,4 @@
         datepicker.css({left: newLeft});
     }
   });
-
-
 })(jQuery); // End of use strict

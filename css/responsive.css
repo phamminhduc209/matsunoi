@@ -96,6 +96,9 @@
 	.modal-dialog {
 		margin: 20px;
 	}
+	.btn-reservation {
+		top: 40%;
+	}
 }
 
 /*----------------

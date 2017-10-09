@@ -244,6 +244,9 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-shadow: none;
   box-shadow: none;
   -webkit-transition: none;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
 }
 
 /* Select 2 */

@@ -712,6 +712,7 @@ header .header-top {
   color: #9d4a24;
   font-weight: bold;
   margin-bottom: 15px;
+  text-transform: uppercase;
 }
 .block-product .item-content .description .price {
   color: #ea0000;

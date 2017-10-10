@@ -75,14 +75,24 @@
 	<section class="wrapper">
 		<div class="container">
 			<div class="row">
-				<div class="block-breadcrumb">
-					<div class="container">
-						<ul class="breadcrumb">
-							<li><a href="#" title="Home">Home</a></li>
-							<li class="active">Services</li>
-						</ul>
-					</div>
-				</div><!-- /block-breadcrumb -->
+				<div class="col-sm-6 col-sm-push-6">
+					<div class="block-btn-fix">
+						<div class="block-content fixed-res">
+							<a class="btn btn-reservation btn-1e" href="#" data-toggle="modal" data-target="#ModalSusscess">RESERVATION</a><!-- Btn Reservation -->
+							<!-- <a class="btn btn-reservation btn-1e" href="#" data-toggle="modal" data-target="#ModalreCheck">Demo Recheck</a> --><!-- Btn Reservation -->
+						</div>
+					</div><!-- block-btn-fix -->
+				</div><!-- col-sm-6 -->
+				<div class="col-sm-6 col-sm-pull-6">
+					<div class="block-breadcrumb">
+						<div class="container">
+							<ul class="breadcrumb">
+								<li><a href="#" title="Home">Home</a></li>
+								<li class="active">Nearby</li>
+							</ul>
+						</div>
+					</div><!-- /block-breadcrumb -->
+				</div><!-- col-sm-6 -->
 				<div class="col-sm-9 col-sm-push-3 main-content">
 					<div class="block-services">
 						<div class="block-title block-title-cm block-page">
@@ -357,21 +367,146 @@
 		</div>	
 	</footer><!-- footer -->
 
-	<a class="btn btn-reservation btn-1e" href="#">RESERVATION</a><!-- Btn Reservation -->
-
 	<a id="return-to-top" class="td-scroll-up" href="javascript:void(0)">
   		<i class="fa fa-angle-up" aria-hidden="true"></i>
 	</a><!-- return to top -->
 
+	<div class="modal fade ModalSusscess" id="ModalSusscess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-md" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<i class="fa fa-times-circle"></i>
+					</button>
+					<h4 class="modal-title" id="myModalLabel">Reservation</h4>
+				</div>
+				<div class="modal-body">
+					<form action="#" method="get" class="block-cus-info">
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="form-group">
+						            <div class='input-group date datetimepicker' id='datetimepicker6'>
+						                <input type='text' class="form-control" placeholder="Check-in" />
+						                <span class="input-group-addon">
+						                    <span class="glyphicon glyphicon-calendar"></span>
+						                </span>
+						            </div>
+						        </div>
+							</div>
+							<div class="col-sm-6">
+								<div class="form-group">
+						            <div class='input-group date datetimepicker' id='datetimepicker7'>
+						                <input type='text' class="form-control" placeholder="Check-out" />
+						                <span class="input-group-addon">
+						                    <span class="glyphicon glyphicon-calendar"></span>
+						                </span>
+						            </div>
+						        </div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="form-group">
+						            <select name="" class="form-control" data-width="100%">
+										<option value="">Number of guests</option>
+									</select>
+						        </div>
+							</div>
+							<div class="col-sm-6">
+								<div class="form-group">
+					             	<select name="" class="form-control" data-width="100%">
+										<option value="">Room Type</option>
+									</select>
+						        </div>
+							</div>
+						</div>
+						<div class="group-btn text-center">
+							<a href="#" class="btn btn-check btn-1e">Check</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div><!-- /#ModalSusscess -->
+
+	<div class="modal fade ModalreCheck" id="ModalreCheck" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-md" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<i class="fa fa-times-circle"></i>
+					</button>
+					<h4 class="modal-title" id="myModalLabel">SORRY! BUT WE ARE OUT OF ROOM</h4>
+				</div>
+				<div class="modal-body">
+					<div class="form-group">
+						<strong>Sorry but we are out of room right now!</strong> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+					</div>
+					<div class="group-btn text-center">
+						<a href="#" class="btn btn-checkagain btn-2e">CHECK AGAIN</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- /#ModalreCheck -->
+
+	<div class="modal fade ModalSusscess" id="arrival-airport" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-md" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<i class="fa fa-times-circle"></i>
+					</button>
+					<h4 class="modal-title" id="myModalLabel">At arrival gate of airport</h4>
+				</div>
+				<div class="modal-body">
+					<div class="form-group">
+						<p>Exit the arrival gate (within the airport building) and head for the taxi reception counter. The taxi counter is a place with the TAXI display. At the counter, please present the address of our hotel to staff. Pay the fee to the staff on the spot and receive 2 receipts. (White paper is driver’s note, the second piece of pink color will be the customer’s receipt)</p>
+						<br>
+						<p>There is a guidance from the staff to go to No 10 gate (right hand side from exit gate). With 2 receipts, please proceed to the designated place. As staff at No 10 calls out, please pass the receipt and head for the car to be dispatched along with the staff. Take the car and you will receive the pink receipt.</p>
+						<br>
+						<p style="color: #00a333;">There is no additional charge in the car.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- /#ModalreCheck -->
+
+	<div class="modal fade ModalSusscess" id="at-taxi-stand" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-md" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<i class="fa fa-times-circle"></i>
+					</button>
+					<h4 class="modal-title" id="myModalLabel">at taxi stand</h4>
+				</div>
+				<div class="modal-body">
+					<div class="form-group">
+						<p>Leave the exit gate and head left. Please line up at the taxi stand. There are a lot of taxi companies, but we recommend using <span style="color: #00a333;">“Vinasun Taxi” (Tel No 028 38 27 27 27) or “Mai Linh Taxi” (Tel No 028 38 38 38 38).</span> Please pay the meter display amount and airport use tax of 10.000 VND in Vietnam Dong when getting off.</p>
+						<br>
+						<p style="color: #ea0000;">Note: please remember taxi driver number in case of recontacting for lost and found.</p>
+						<br>
+						<p>Because we located in a small alley from the street, in case you are lost please contact us via</p>
+						<p style="color: #ea0000;">Tel No 028 38246068.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- /#ModalreCheck -->
+
 	<!-- ===== JS ===== -->
 	<script src="js/jquery.min.js"></script>
+	<script src="js/moment.js"></script>
 	<!-- ===== JS Bootstrap ===== -->
 	<script src="lib/bootstrap/bootstrap.min.js"></script>
-	<!-- Js bxslider -->
-	<script src="lib/bxslider/bxslider.min.js"></script>
-	<!-- Js lightbox -->
-	<script src="lib/lightbox/js/lightbox.js"></script>
-    <!-- sticky -->
+	<!-- datetimepicker -->
+	<script src="lib/datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+	<!-- carousel -->
+	<script src="lib/carousel/owl.carousel.min.js"></script>
+	<!-- Select -->
+    <script src="lib/select2/js/select2.min.js"></script>
+	<!-- sticky -->
     <script src="lib/sticky/jquery.sticky.js"></script>
     <!-- Js Common -->
 	<script src="js/common.js"></script>

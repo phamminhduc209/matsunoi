@@ -382,7 +382,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 15px;
 }
 .sticky-wrapper.is-sticky .fixed-res {
-  z-index: 99;
   right: 0;
 }
 .btn-reservation {
@@ -396,10 +395,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   border: none;
   border-radius: 0;
-  // position: fixed;
-  // top: 25%;
-  // right: 0;
-  z-index: 99;
+  /*position: fixed;
+  top: 25%;
+  right: 0;*/
+  z-index: 9;
 }
 
 /* Header

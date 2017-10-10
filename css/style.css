@@ -445,6 +445,7 @@ header .header-top {
   ========================================================================== */
 .menu {
   background: #9d4a24;
+  width: 100%;
 }
 .menu .nav-menu>li {
   float: left;

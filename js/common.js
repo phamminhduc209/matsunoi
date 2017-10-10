@@ -30,8 +30,7 @@
    * 2. Sticky Menu
   */
   $('.fixed').sticky({ topSpacing: 0 });
-  $('.fixed-res').sticky({ topSpacing: 105 });
-
+  $('.fixed-res').sticky();
   /*
    * 3. select2
   */

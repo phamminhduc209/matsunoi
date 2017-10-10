@@ -383,9 +383,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .sticky-wrapper.is-sticky .fixed-res {
   z-index: 99;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
   right: 0;
 }
 .btn-reservation {
@@ -696,6 +693,8 @@ header .header-top {
 }
 .block-product .item {
   margin-bottom: 30px;
+  float: left;
+  width: 100%;
 }
 .block-product .item:last-child {
   margin-bottom: 0;

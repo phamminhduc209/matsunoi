@@ -30,6 +30,9 @@
   .container {
     width: 1150px;
   }
+  .sticky-wrapper.is-sticky .fixed-res {
+  	top: 55px !important;
+  }
 }
 
 
@@ -39,6 +42,9 @@
 @media (max-width: 1024px) {
   .box-module .box-title .title {
   	font-size: 12px;
+  }
+  .sticky-wrapper.is-sticky .fixed-res {
+  	top: 55px !important;
   }
 }
 
@@ -232,6 +238,9 @@
 	.btn-reservation {
 	    top: 50%;
 	}
+	.sticky-wrapper.is-sticky .fixed-res {
+	  	top: 105px !important;
+  	}
 }
 
 /*----------------

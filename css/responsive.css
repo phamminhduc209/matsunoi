@@ -180,6 +180,9 @@
 		height: 36px;
 		overflow: hidden;
 	}
+	.btn-reservation {
+	    top: 40%;
+	}
 }
 
 /*----------------
@@ -226,6 +229,18 @@
 		width: 110px;
 		padding: 8px 12px;
 	}
+	.btn-reservation {
+	    top: 50%;
+	}
+}
+
+/*----------------
+[Styles for devices max 375px
+*/
+@media (max-width: 375px) {
+	.btn-reservation {
+	    top: 50%;
+	}
 }
 
 /*----------------
@@ -255,5 +270,8 @@
 	}
 	.modal {
 		padding-right: 0;
+	}
+	.btn-reservation {
+	    top: 60%;
 	}
 }

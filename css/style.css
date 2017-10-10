@@ -377,11 +377,21 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.12);
 }
 /* Button Reservation */
+.block-btn-fix {
+  text-align: right;
+  margin-bottom: 15px;
+}
+.sticky-wrapper.is-sticky .fixed-res {
+  z-index: 99;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  right: 0;
+}
 .btn-reservation {
   width: 150px;
   height: 36px;
   padding: 0;
-  display: block;
   text-align: center;
   line-height: 36px;
   background: #66a718;
@@ -389,9 +399,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   border: none;
   border-radius: 0;
-  position: fixed;
-  top: 25%;
-  right: 0;
+  // position: fixed;
+  // top: 25%;
+  // right: 0;
   z-index: 99;
 }
 

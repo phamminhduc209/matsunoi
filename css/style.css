@@ -186,7 +186,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Wrapper */
 .wrapper {
-  padding: 15px 0;
+  padding: 15px 0 40px;
   position: relative;
 }
 
@@ -620,23 +620,32 @@ header .header-top {
   overflow: hidden;
   display: block;
   margin-bottom: 5px;
-  padding-left: 1px;
+  padding-left: 22px;
 }
 .box-info-sb ul li:last-child {
    margin-bottom: 0;
 }
-.box-info-sb ul li span.icon {
+.box-info-sb ul li:before {
+  content: "\f192";
+  font-family: "FontAwesome";
+  font-size: 15px;
+  color: #8ac840;
+  position: absolute;
+  top: 0;
+  left: 1px;
+}
+/*.box-info-sb ul li span.icon {
   font-size: 15px;
   color: #8ac840;
   float: left;
   width: 12px;
   margin-right: 10px;
   vertical-align: top;
-}
-.box-info-sb ul li span.text {
+}*/
+/*.box-info-sb ul li span.text {
   float: left;
   width: calc(100% - 22px);
-}
+}*/
 
 /* Block Map
   ========================================================================== */
@@ -792,11 +801,21 @@ header .header-top {
   float: left;
   clear: both;
   margin-bottom: 20px;
+  position: relative;
+  padding-left: 20px;
 }
 .block-noted ul li:last-child {
   margin-bottom: 0;
 }
-.block-noted ul li .icon {
+.block-noted ul li:before {
+  content: "\f18e";
+  font-family: "FontAwesome";
+  font-size: 13px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/*.block-noted ul li .icon {
   float: left;
   width: 12px;
   margin-right: 10px;
@@ -804,7 +823,7 @@ header .header-top {
 .block-noted ul li .text {
   float: left;
   width: calc(100% - 22px);
-}
+}*/
 
 /* Block Payment
   ========================================================================== */
@@ -819,11 +838,22 @@ header .header-top {
   float: left;
   clear: both;
   margin-bottom: 10px;
+  position: relative;
+  padding-left: 25px;
 }
 .block-payment ul li:last-child {
   margin-bottom: 0;
 }
-.block-payment ul li .icon {
+.block-payment ul li:before {
+  content: "\f192";
+  font-family: "FontAwesome";
+  font-size: 13px;
+  color: #8ac840;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/*.block-payment ul li .icon {
   float: left;
   width: 12px;
   color: #8ac840;
@@ -832,7 +862,7 @@ header .header-top {
 .block-payment ul li .text {
   float: left;
   width: calc(100% - 22px);
-}
+}*/
 
 /* Block Nearby
   ========================================================================== */

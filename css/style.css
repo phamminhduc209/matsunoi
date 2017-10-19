@@ -513,6 +513,10 @@ header .header-top {
 }
 .box-link .box-content ul li a span.image {
   margin-right: 15px;
+  width: 40px;
+}
+.box-link .box-content ul li a span.image img {
+  margin: 0 auto;
 }
 .box-link .box-content ul li {
   position: relative;
